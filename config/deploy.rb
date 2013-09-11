@@ -6,8 +6,9 @@ set :repository,  "git@github.com:integrum/where-agile-works.git"
 # set :scm, :git # You can set :scm explicitly or Capistrano will make an intelligent guess based on known version control directory names
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 set :scm, :git
-set :deploy_to, "/home/deploy/#{application}"
+set :deploy_to, "/home/deploy/apps/#{application}"
 set :user, "deploy"
+set :use_sudo, false
 
 role :web, "192.237.212.244"                          # Your HTTP server, Apache/etc
 role :app, "192.237.212.244"                          # This may be the same as your `Web` server
