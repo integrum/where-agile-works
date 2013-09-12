@@ -7,8 +7,39 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<body>
 
-<%= yield %>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container"  >
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Where Agile Works</a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="/coach.html">Coach</a></li>
+          <li><a href="/scrum-master.html">Scum Master</a></li>
+          <li><a href="/product-owner.html">Product Owner</a></li>
+          <li><a href="/developer.html">Developer</a></li>
+          <li><a href="/team-member.html">Team Member</a></li>
+          <li><a href="/executive.html">Executive</a></li>
+          <li><a href="/design.html">Design / UX</a></li>
+          <li><a href="/manager.html">Manager</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+
+  <div class="container">
+
+    <%= yield %>
+
+  </div><!-- /.container -->
+
 
 </body>
 </html>
