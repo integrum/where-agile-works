@@ -12,3 +12,7 @@
  *= require bootstrap
  *= require_self
  */
+
+body{
+  margin-top:70px;
+}
